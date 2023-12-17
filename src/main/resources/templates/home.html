@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script|Dosis|Montserrat|Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css" type="text/css">
+    <title>Home</title>
+  </head>
+  <body>
+      <img src="/imagini/logo.jpg" alt="logo" width="190px">
+      <hr>
+      <div class="meniu">
+      <nav>
+        <ul>
+                <li><a th:href="@{/home}">Home</a></li>
+               <!--<li><a th:href="@{/productie}">Productie</a></li>-->
+                <li><a th:href="@{/produse}">Produse</a></li>
+                <li><a th:href="@{/chestionar}">Chestionar</a></li>
+                <li><a th:href="@{/contact}">Contact</a></li>
+        </ul>
+      </nav>
+      </div>
+      <img class="cover"src="imagini/cover.jpg" alt="cover" width="1100px" height="300px">
+      <h1>Ciocolata artizanala premium</h1>
+        <p class="descriere">Chocolateria este locul in care iubitorii de ciocolata sunt invitati sa ia parte la calatoria gastronomica, bucurandu-se de savoarea spectacolului gustativ oferit de ciocolata printr-o varietate impresionanta  de arome şi gusturi unice.
+        Chocolateria este un producator  de ciocolata artizanala premium, care ofera clintilor sai o variata gama de produse din ciocolata, alaturi de cele mai minunate experiente gastronomice.
+        Iubitorii de ciocolată au la dispozitie un numar impresionant de arome, gusturi si texturi ce acompaniaza gustul ciocolatei.</p>
+        <aside>
+          <blockquote class="aside">
+            Ciocolata este o expresie a pasiunii transpusa prin combinații neașteptate ale celor mai bune și mai fine ingrediente oferite de natură. Chocolateria promovează excelența gustului ce capătă valențe, care variază de la puternice și chiar extreme în cazul ciocolatei negre, până la cele dulci și fine ale ciocolatei cu lapte.
+            <br><br>Echipa Chocolateria
+          </blockquote>
+        </aside>
+        <button class="buton"> <a th:href="@{/contact}">Contact</a></button>
+          <br>
+    </body>
+</html>

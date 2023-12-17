@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en" dir="ltr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script|Dosis|Montserrat|Sacramento&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css" type="text/css">
+    <title>Chestionar</title>
+</head>
+
+<body>
+    <img class="pictures" src="/imagini/logo.jpg" alt="logo" width="190px">
+    <hr>
+    <div class="meniu">
+        <nav>
+            <ul>
+                <li><a th:href="@{/home}">Home</a></li>
+               <!--<li><a th:href="@{/productie}">Productie</a></li>-->
+                <li><a th:href="@{/produse}">Produse</a></li>
+                <li><a th:href="@{/chestionar}">Chestionar</a></li>
+                <li><a th:href="@{/contact}">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <h1>Impreuna imbunatatim experienta Chocolateria!</h1>
+    <form action="@{/chestionar}" th:action="@{/chestionar}" th:object="${chestionar}" method="post">
+        <fieldset>
+            <legend>Informatii personale</legend><br> 
+            
+            Nume si prenume <br> 
+            <input type="text" th:field="*{name}" name="name"><br><br> 
+            Adresa e-mail<br> 
+            <input type="email" th:field="*{email}" name="email" required
+                placeholder="Introdu o adresa de e-mail!"><br>
+        </fieldset><br>
+        
+        <fieldset>
+            <legend>Experienta ta personala cu Chocolateria</legend>
+            <textarea rows="5" cols="20" th:field="*{comments}"
+                placeholder="Scrie cateva cuvinte despre experienta ta cu Chocolateria!">
+            </textarea><br><br>
+            Ai recomanda si altora Chocolateria? <br> 
+            <input type="radio" th:field="*{likedSite}" name="likedSite" value="true">Da <br> 
+            <input type="radio" th:field="*{likedSite}" name="likedSite" value="false">Nu <br><br>
+            <input class="send" type="submit" value="Trimite">
+        </fieldset>
+    </form>
+</body>
+
+</html>

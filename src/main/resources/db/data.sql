@@ -1,0 +1,1 @@
+INSERT INTO TABEL (likedSite, comments, email, name) VALUES (FALSE, 'Very bad!!!', 'andrei@gmail.com', 'Andrei');

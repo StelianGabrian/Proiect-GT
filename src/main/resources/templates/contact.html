@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script|Dosis|Montserrat|Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css" type="text/css">
+    <title>Contact</title>
+  </head>
+  <body>
+    <img src="imagini/logo.jpg" alt="logo" width="190px">
+    <hr>
+    <div class="meniu">
+    <nav>
+      <ul>
+                <li><a th:href="@{/home}">Home</a></li>
+               <!--<li><a th:href="@{/productie}">Productie</a></li>-->
+                <li><a th:href="@{/produse}">Produse</a></li>
+                <li><a th:href="@{/chestionar}">Chestionar</a></li>
+                <li><a th:href="@{/contact}">Contact</a></li>
+      </ul>
+    </nav>
+    </div>
+<h1>Contacteaza-ne:</h1>
+<img src="imagini/adresa.jpg" alt="Contact" width="700px" height="400px">
+<div class="scurta-descriere">
+  <p style="font-family:'Sacramento', cursive; font-size:40px">Ciocolata artizanala modelata in atelierul Chocolateria</p>
+</div>
+<address class="date-contact">
+  <h2>Chocolateria</h2>
+  www.chocolateria.ro<br>
+  str. Ciocolatei, nr. 361<br>
+  Romania
+</address>
+  </body>
+</html>
